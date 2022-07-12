@@ -3,7 +3,7 @@ export default function styles() {
     container: {
       "& div": {
         /* Finally, a use for "groove"! */
-        border: "12px groove rebeccapurple",
+        border: "18px groove rebeccapurple",
 
         display: "table-cell",
         borderRadius: "999px",
