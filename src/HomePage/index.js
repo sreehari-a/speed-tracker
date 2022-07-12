@@ -100,7 +100,7 @@ export function HomePage({ classes, performance, getPerformance, loading, resetT
           </div>
         </>
       )}
-       <Loader loaderText={'Please wait until we analyze your page......'} />
+       <Loader loaderText={'Please wait while we analyze your page......'} />
     </div>
   );
 }
