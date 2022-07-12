@@ -1,0 +1,77 @@
+@import '~antd/dist/antd.css';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont,"Alegreya_Sans", 'NotoSerifRegular','Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 9px;
+}
+@media screen and (min-width: 460px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 530px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.caligraphy {
+  font-family: 'Pacifico';
+}
+.thick-text {
+  font-family: 'Anton';
+}
+.malayalam {
+  font-family: "NotoSerifMalayalam";
+}
+@font-face {
+  font-family: "NotoSerifRegular";
+  src: local("NotoSerifRegular"),
+    url("./fonts/notoSerif/NotoSerifDisplay-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SplineSansMono";
+  src: local("SplineSansMono"),
+    url("./fonts/splineSans/SplineSansMono-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Pacifico";
+  src: local("Pacifico"),
+    url("./fonts/Pacifico/Pacifico-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Anton";
+  src: local("Anton"),
+    url("./fonts/Anton/Anton-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "NotoSerifMalayalam";
+  src: local("NotoSerifMalayalam"),
+    url("./fonts/Noto_Serif_Malayalam/NotoSerifMalayalam-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Alegreya_Sans";
+  src: local("Alegreya_Sans"),
+    url("./fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
