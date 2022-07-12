@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/speed-tracker/static/css/main.03492834.css",
+    "main.js": "/speed-tracker/static/js/main.9f906708.js",
+    "static/js/346.08a5db33.chunk.js": "/speed-tracker/static/js/346.08a5db33.chunk.js",
+    "static/js/787.eb852f1a.chunk.js": "/speed-tracker/static/js/787.eb852f1a.chunk.js",
+    "static/js/415.6af0b4f9.chunk.js": "/speed-tracker/static/js/415.6af0b4f9.chunk.js",
+    "static/media/NotoSerifDisplay-Italic-VariableFont_wdth,wght.ttf": "/speed-tracker/static/media/NotoSerifDisplay-Italic-VariableFont_wdth,wght.ee9b28946e1da7661323.ttf",
+    "static/media/NotoSerifDisplay-VariableFont_wdth,wght.ttf": "/speed-tracker/static/media/NotoSerifDisplay-VariableFont_wdth,wght.432c2f12c69bdf022314.ttf",
+    "static/media/Pacifico-Regular.ttf": "/speed-tracker/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
+    "static/media/AlegreyaSans-Regular.ttf": "/speed-tracker/static/media/AlegreyaSans-Regular.1700f08d80abc337986e.ttf",
+    "static/media/NotoSerifMalayalam-VariableFont_wght.ttf": "/speed-tracker/static/media/NotoSerifMalayalam-VariableFont_wght.a482815f28d25fba2b58.ttf",
+    "static/media/Anton-Regular.ttf": "/speed-tracker/static/media/Anton-Regular.170b842f9a8cd6150a0d.ttf",
+    "static/media/SplineSansMono-VariableFont_wght.ttf": "/speed-tracker/static/media/SplineSansMono-VariableFont_wght.5a95f1f63493e0a0fc5b.ttf",
+    "index.html": "/speed-tracker/index.html",
+    "main.03492834.css.map": "/speed-tracker/static/css/main.03492834.css.map",
+    "main.9f906708.js.map": "/speed-tracker/static/js/main.9f906708.js.map",
+    "346.08a5db33.chunk.js.map": "/speed-tracker/static/js/346.08a5db33.chunk.js.map",
+    "787.eb852f1a.chunk.js.map": "/speed-tracker/static/js/787.eb852f1a.chunk.js.map",
+    "415.6af0b4f9.chunk.js.map": "/speed-tracker/static/js/415.6af0b4f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03492834.css",
+    "static/js/main.9f906708.js"
+  ]
+}
