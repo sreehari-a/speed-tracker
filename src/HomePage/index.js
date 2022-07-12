@@ -59,7 +59,7 @@ export function HomePage({ classes, performance, getPerformance, loading, resetT
           </div>
         </>
       )}
-      {rowData && !loading && (
+      {rowData.length && !loading && (
         <>
           <table>
             <tr>
