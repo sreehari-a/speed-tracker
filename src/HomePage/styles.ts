@@ -7,7 +7,7 @@ export default function styles() {
 
     formWrapper: {
       width: "100%",
-      "& .ant-input": {
+      "& .ant-input,.ant-input-number": {
         width: "35rem",
         lineHeight: "2rem",
         borderRadius: "3px",

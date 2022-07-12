@@ -2,7 +2,7 @@
  * Gets the repositories of the user from Github
  */
 
-import { call, put, select, takeEvery, takeLatest } from "redux-saga/effects";
+import { call, put, select, takeEvery } from "redux-saga/effects";
 import APIService from "../APIService";
 import { decrementLoader, incrementLoader } from "../components/loader/actions";
 import { addRowData, setHeaders } from "./actions";
@@ -37,8 +37,6 @@ export function* getPerformance(action: any) {
 
     }
     yield put(addRowData(rowData));
-    // console.log("data", data);
-    // yield put(setPerformance(data));
   } catch (err) {
     console.log(err);
   } finally {
