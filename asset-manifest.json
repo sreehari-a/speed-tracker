@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/speed-tracker/static/css/main.03492834.css",
-    "main.js": "/speed-tracker/static/js/main.9f906708.js",
-    "static/js/346.08a5db33.chunk.js": "/speed-tracker/static/js/346.08a5db33.chunk.js",
+    "main.js": "/speed-tracker/static/js/main.4c42c152.js",
+    "static/js/346.e4cf84e4.chunk.js": "/speed-tracker/static/js/346.e4cf84e4.chunk.js",
     "static/js/787.eb852f1a.chunk.js": "/speed-tracker/static/js/787.eb852f1a.chunk.js",
     "static/js/415.6af0b4f9.chunk.js": "/speed-tracker/static/js/415.6af0b4f9.chunk.js",
     "static/media/NotoSerifDisplay-Italic-VariableFont_wdth,wght.ttf": "/speed-tracker/static/media/NotoSerifDisplay-Italic-VariableFont_wdth,wght.ee9b28946e1da7661323.ttf",
@@ -14,13 +14,13 @@
     "static/media/SplineSansMono-VariableFont_wght.ttf": "/speed-tracker/static/media/SplineSansMono-VariableFont_wght.5a95f1f63493e0a0fc5b.ttf",
     "index.html": "/speed-tracker/index.html",
     "main.03492834.css.map": "/speed-tracker/static/css/main.03492834.css.map",
-    "main.9f906708.js.map": "/speed-tracker/static/js/main.9f906708.js.map",
-    "346.08a5db33.chunk.js.map": "/speed-tracker/static/js/346.08a5db33.chunk.js.map",
+    "main.4c42c152.js.map": "/speed-tracker/static/js/main.4c42c152.js.map",
+    "346.e4cf84e4.chunk.js.map": "/speed-tracker/static/js/346.e4cf84e4.chunk.js.map",
     "787.eb852f1a.chunk.js.map": "/speed-tracker/static/js/787.eb852f1a.chunk.js.map",
     "415.6af0b4f9.chunk.js.map": "/speed-tracker/static/js/415.6af0b4f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03492834.css",
-    "static/js/main.9f906708.js"
+    "static/js/main.4c42c152.js"
   ]
 }
