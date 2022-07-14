@@ -23,7 +23,7 @@ export function* getPerformance(action: any) {
         yield call(() =>
           homeService.getPerformance({
             url,
-            key: API_KEY,
+            key: 'AIzaSyCuW-Cb8ECUtHgr5mzYcJHF9ciXstXQ3rA',
           })
         );
       metrices.push(getLighthouseDetails(lighthouseResult, loadingExperience));
