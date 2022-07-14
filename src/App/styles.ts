@@ -1,12 +1,18 @@
-export default function styles() {
+// import colors from "../colors";
+import BgPhoto from '../images/lightbg.webp';
+
+
+export default function styles(colors: any) {
   return {
     appRoot: {
       height: '100vh',
-      background: '#fff',
+      background: colors.background,
+      // backgroundImage: `url(${BgPhoto})`,
+      backgroundSize: 'cover'
     },
     app: {
       height: 'calc(100% - 5rem)',
-      color: '#000',
+      color: colors.textColor,
       width: '100%',
       display: 'flex',
       justifyContent: 'center',

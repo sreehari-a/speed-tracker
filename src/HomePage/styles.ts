@@ -1,8 +1,8 @@
-export default function styles() {
+export default function styles(colors: any) {
   return {
     container: {
       width: "100%",
-      color: "#000",
+      color: colors.textColor,
     },
 
     formWrapper: {
@@ -11,12 +11,17 @@ export default function styles() {
         width: "35rem",
         lineHeight: "2rem",
         borderRadius: "3px",
-        "&:hover": {
-          borderColor: "#40a9ff",
+        "&:hover,:focus": {
+          borderColor: colors.primaryDark,
         },
         "&::placeholder": {
-          color: "#848484",
+          color: "#7c2424",
         },
+        background: 'transparent',
+        border: `1px solid ${colors.primary}`,
+      },
+      '& .ant-input-number-input::placeholder': {
+        color: "#7c2424",
       },
       "& .ant-collapse-header.ant-collapse-header": {
         alignItems: "center",
@@ -24,22 +29,28 @@ export default function styles() {
           width: "auto",
         },
       },
-      "& table": {
-        fontFamily: "arial, sans-serif",
-        borderCollapse: "collapse",
-        width: "90%",
-        margin: 'auto',
-      },
-      "& td,th": {
-        border: "1px solid #dddddd",
-        textAlign: "left",
-        padding: "8px",
+      '& .ant-btn': {
+        background: colors.primary,
+        color: '#fff',
+        "&:hover": {
+          background: colors.primaryDark,
+        },
       },
     },
     formItem: {
       margin: "0.625rem",
       display: 'flex',
-      justifyContent: 'center'
+      flexDirection: 'column',
+      alignItems: 'center',
+
     },
+    aboutText: {
+      color: colors.primary,
+      textAlign: 'center',
+      fontSize: '20px'
+    },
+    label: {
+      width: '35rem',
+    }
   };
 }
