@@ -19,6 +19,7 @@ type Props = {
   resetTable: Function;
 };
 type Form = {
+  API_KEY?: string;
   url?: string;
   iterationCount?: number;
 }
@@ -44,6 +45,7 @@ export function HomePage({
     const urls = form.url?.split(",");
     urls?.forEach((url) => {
       getPerformance({
+        API_KEY: form.API_KEY,
         url,
         iterationCount: form.iterationCount || 5,
       });
@@ -56,6 +58,15 @@ export function HomePage({
           </div>
       {!loading && (
         <>
+        <div className={classes.formItem}>
+          <div className={classes.label}>{'Google API key with enabled  PageInsights API'}</div>
+          <Input
+            id="API_KEY"
+            placeholder="Enter google API key"
+            value={form.API_KEY}
+            onChange={updateForm}
+          />
+        </div>
           <div className={classes.formItem}>
             <div className={classes.label}>{'URL(s)'}</div>
             <Input
