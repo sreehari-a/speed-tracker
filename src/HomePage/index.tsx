@@ -8,44 +8,67 @@ import { Button, Input, InputNumber } from "antd";
 import React, { useState } from "react";
 import stylize from "../utils/stylize";
 import styles from "./styles";
-import { CSVLink } from "react-csv";
 import Loader from "../components/loader";
+import Table from "../components/Table";
 
-export function HomePage({ classes, performance, getPerformance, loading, resetTable }) {
-  const [form, setForm] = useState({});
-  const { rowData, headers } = performance || {};
-  const updateForm = (event) => {
+type Props = {
+  classes: any;
+  performance: any;
+  getPerformance: Function;
+  loading: boolean;
+  resetTable: Function;
+};
+type Form = {
+  API_KEY?: string;
+  url?: string;
+  iterationCount?: number;
+}
+export function HomePage({
+  classes,
+  performance,
+  getPerformance,
+  loading,
+  resetTable,
+}: Props) {
+  const [form, setForm] = useState<Form>({});
+  const { rowData } = performance || {};
+  const updateForm = (event: any) => {
     const { target: { id = "", value = "" } = {} } = event;
     const updatedForm = { ...form, [id]: value };
     id && setForm(updatedForm);
   };
-  const updateIterationCount = value => {
-    updateForm({target :{id: 'iterationCount', value}});
-  }
+  const updateIterationCount = (value: any) => {
+    updateForm({ target: { id: "iterationCount", value } });
+  };
   const readPerformanceData = () => {
     resetTable?.();
-    const urls = form.url.split(',');
-    urls.forEach(url => {
+    const urls = form.url?.split(",");
+    urls?.forEach((url) => {
       getPerformance({
         API_KEY: form.API_KEY,
         url,
         iterationCount: form.iterationCount || 5,
-      })
-    })
+      });
+    });
   };
   return (
     <div className={classes.formWrapper}>
+      <div className={`${classes.aboutText} caligraphy`}>
+            Runs performance audits and analyses the result
+          </div>
       {!loading && (
         <>
+        <div className={classes.formItem}>
+          <div className={classes.label}>{'Google API Key'}</div>
+          <Input
+            id="url"
+            placeholder="Enter Google API Key with enabled PageSpeedInsights API"
+            value={form.url}
+            onChange={updateForm}
+          />
+        </div>
           <div className={classes.formItem}>
-            <Input
-              id="API_KEY"
-              placeholder="Enter Google API Key"
-              value={form.API_KEY}
-              onChange={updateForm}
-            />
-          </div>
-          <div className={classes.formItem}>
+            <div className={classes.label}>{'URL(s)'}</div>
             <Input
               id="url"
               placeholder="Enter url or multiple urls separated by comma"
@@ -54,6 +77,7 @@ export function HomePage({ classes, performance, getPerformance, loading, resetT
             />
           </div>
           <div className={classes.formItem}>
+            <div className={classes.label}>{'No. of samples to be taken'}</div>
             <InputNumber
               id="iterationCount"
               placeholder="Enter no. of samples of each url to be analyzed defaults to 5 to a max of 10"
@@ -69,38 +93,13 @@ export function HomePage({ classes, performance, getPerformance, loading, resetT
         </>
       )}
       {rowData.length && !loading && (
-        <>
-          <table>
-            <tr>
-              {headers.map(({ label }) => {
-                return <th>{label}</th>;
-              })}
-            </tr>
-            {rowData.map((data) => {
-              return (
-                <tr>
-                  {headers.map(({ key }) => {
-                    return <td>{data[key]}</td>;
-                  })}
-                </tr>
-              );
-            })}
-          </table>
-          <div className={classes.formItem}>
-            <CSVLink
-              data={rowData}
-              filename={`performance-data`}
-              headers={headers}
-              onClick={() => {
-                console.log("clicked");
-              }}
-            >
-              <Button>Download Excel</Button>
-            </CSVLink>
-          </div>
-        </>
+        //@ts-ignore
+        <Table data={performance} />
       )}
-       <Loader loaderText={'Please wait while we analyze your page......'} />
+      {
+        //@ts-ignore
+        <Loader loaderText={"Please wait while we analyze your page......"} />
+      }
     </div>
   );
 }

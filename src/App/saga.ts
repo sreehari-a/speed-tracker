@@ -11,7 +11,7 @@ import { analyzeObj, getFormattedData, getLighthouseDetails } from "./utils";
 
 export function* getPerformance(action: any) {
   try {
-    const { url, API_KEY, iterationCount = 5 } = action.payload;
+    const { url, iterationCount = 5, API_KEY } = action.payload;
     yield put(incrementLoader());
     const homeService = APIService.getHomeRunner();
     let metrices = [];

@@ -33,18 +33,19 @@ type Props = {
   loading: boolean;
   fetchPerfromance: Function;
   resetTable: Function;
+  toggleTheme: Function;
 };
 const key = "app";
 export function App(props: Props) {
   useInjectReducer({ key, reducer });
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
-  const { fetchPerfromance, classes, headers, rowData, loading, resetTable } = props;
+  const { fetchPerfromance, classes, headers, rowData, loading, resetTable, toggleTheme } = props;
   return (
     <div className={classes.appRoot}>
       {
         //@ts-ignore
-        <AppHeader />
+        <AppHeader toggleTheme={toggleTheme} />
       }
       <div className={classes.app}>
         <HomePage
