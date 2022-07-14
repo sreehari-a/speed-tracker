@@ -11,7 +11,7 @@ import { analyzeObj, getFormattedData, getLighthouseDetails } from "./utils";
 
 export function* getPerformance(action: any) {
   try {
-    const { url, API_KEY, iterationCount = 5 } = action.payload;
+    const { url, iterationCount = 5 } = action.payload;
     yield put(incrementLoader());
     const homeService = APIService.getHomeRunner();
     let metrices = [];
@@ -23,7 +23,7 @@ export function* getPerformance(action: any) {
         yield call(() =>
           homeService.getPerformance({
             url,
-            key: API_KEY,
+            key: 'AIzaSyCuW-Cb8ECUtHgr5mzYcJHF9ciXstXQ3rA',
           })
         );
       metrices.push(getLighthouseDetails(lighthouseResult, loadingExperience));
