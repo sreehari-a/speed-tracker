@@ -1,8 +1,10 @@
+import Logo from "../../images/speed tracker logo.jpg";
 export default function styles(colors: any) {
   return {
     appHeader: {
       display: "flex",
       justifyContent: "center",
+      alignItems: 'center',
       width: "100%",
       height: "5rem",
       background: "transparent",
@@ -13,6 +15,14 @@ export default function styles(colors: any) {
         fontSize: "2rem",
       },
       position: "relative",
+    },
+    logo: {
+      backgroundImage: `url(${Logo})`,
+      height: "3.5rem",
+      width: "12rem",
+      backgroundSize: "cover",
+      position: "absolute",
+      left: 0,
     },
     buttonGroup: {
       position: 'absolute',

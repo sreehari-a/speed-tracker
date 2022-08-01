@@ -10,7 +10,7 @@ type Props = {
 function AppHeader(props: Props) {
   return (
     <div className={`${props.classes.appHeader}`}>
-      {/* <div className={props.classes.logo}></div> */}
+      <div className={props.classes.logo}></div>
       <span className="caligraphy">Speed Tracker</span>
       <div className={props.classes.buttonGroup}>
         

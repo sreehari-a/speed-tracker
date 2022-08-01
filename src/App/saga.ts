@@ -11,7 +11,7 @@ import { analyzeObj, getFormattedData, getLighthouseDetails } from "./utils";
 
 export function* getPerformance(action: any) {
   try {
-    const { url, iterationCount = 5, API_KEY } = action.payload;
+    const { url, iterationCount = 5 } = action.payload;
     yield put(incrementLoader());
     const homeService = APIService.getHomeRunner();
     let metrices = [];
@@ -23,7 +23,7 @@ export function* getPerformance(action: any) {
         yield call(() =>
           homeService.getPerformance({
             url,
-            key: API_KEY,
+            key: process.env.REACT_APP_API_KEY
           })
         );
       metrices.push(getLighthouseDetails(lighthouseResult, loadingExperience));

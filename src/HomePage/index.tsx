@@ -19,10 +19,9 @@ type Props = {
   resetTable: Function;
 };
 type Form = {
-  API_KEY?: string;
   url?: string;
   iterationCount?: number;
-}
+};
 export function HomePage({
   classes,
   performance,
@@ -45,7 +44,6 @@ export function HomePage({
     const urls = form.url?.split(",");
     urls?.forEach((url) => {
       getPerformance({
-        API_KEY: form.API_KEY,
         url,
         iterationCount: form.iterationCount || 5,
       });
@@ -54,21 +52,12 @@ export function HomePage({
   return (
     <div className={classes.formWrapper}>
       <div className={`${classes.aboutText} caligraphy`}>
-            Runs performance audits and analyses the result
-          </div>
+        Runs performance audits and analyses the result
+      </div>
       {!loading && (
         <>
-        <div className={classes.formItem}>
-          <div className={classes.label}>{'Google API Key'}</div>
-          <Input
-            id="url"
-            placeholder="Enter Google API Key with enabled PageSpeedInsights API"
-            value={form.url}
-            onChange={updateForm}
-          />
-        </div>
           <div className={classes.formItem}>
-            <div className={classes.label}>{'URL(s)'}</div>
+            <div className={classes.label}>{"URL(s)"}</div>
             <Input
               id="url"
               placeholder="Enter url or multiple urls separated by comma"
@@ -77,7 +66,7 @@ export function HomePage({
             />
           </div>
           <div className={classes.formItem}>
-            <div className={classes.label}>{'No. of samples to be taken'}</div>
+            <div className={classes.label}>{"No. of samples to be taken"}</div>
             <InputNumber
               id="iterationCount"
               placeholder="Enter no. of samples of each url to be analyzed defaults to 5 to a max of 10"
