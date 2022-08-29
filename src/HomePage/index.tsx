@@ -81,7 +81,7 @@ export function HomePage({
           </div>
         </>
       )}
-      {rowData.length && !loading && (
+      {!!rowData.length && !loading && (
         //@ts-ignore
         <Table data={performance} />
       )}
