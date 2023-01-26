@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/speed-tracker/static/css/main.03492834.css",
-    "main.js": "/speed-tracker/static/js/main.b908ac40.js",
+    "main.js": "/speed-tracker/static/js/main.a3facda0.js",
     "static/js/7.7e414f5c.chunk.js": "/speed-tracker/static/js/7.7e414f5c.chunk.js",
     "static/js/787.eb852f1a.chunk.js": "/speed-tracker/static/js/787.eb852f1a.chunk.js",
     "static/js/2.5789b0eb.chunk.js": "/speed-tracker/static/js/2.5789b0eb.chunk.js",
@@ -14,13 +14,13 @@
     "static/media/SplineSansMono-VariableFont_wght.ttf": "/speed-tracker/static/media/SplineSansMono-VariableFont_wght.5a95f1f63493e0a0fc5b.ttf",
     "index.html": "/speed-tracker/index.html",
     "main.03492834.css.map": "/speed-tracker/static/css/main.03492834.css.map",
-    "main.b908ac40.js.map": "/speed-tracker/static/js/main.b908ac40.js.map",
+    "main.a3facda0.js.map": "/speed-tracker/static/js/main.a3facda0.js.map",
     "7.7e414f5c.chunk.js.map": "/speed-tracker/static/js/7.7e414f5c.chunk.js.map",
     "787.eb852f1a.chunk.js.map": "/speed-tracker/static/js/787.eb852f1a.chunk.js.map",
     "2.5789b0eb.chunk.js.map": "/speed-tracker/static/js/2.5789b0eb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03492834.css",
-    "static/js/main.b908ac40.js"
+    "static/js/main.a3facda0.js"
   ]
 }
