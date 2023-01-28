@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/speed-tracker/static/css/main.03492834.css",
-    "main.js": "/speed-tracker/static/js/main.2259fd25.js",
-    "static/js/7.7e414f5c.chunk.js": "/speed-tracker/static/js/7.7e414f5c.chunk.js",
+    "main.js": "/speed-tracker/static/js/main.f883db61.js",
+    "static/js/7.558056fe.chunk.js": "/speed-tracker/static/js/7.558056fe.chunk.js",
     "static/js/787.eb852f1a.chunk.js": "/speed-tracker/static/js/787.eb852f1a.chunk.js",
-    "static/js/2.5789b0eb.chunk.js": "/speed-tracker/static/js/2.5789b0eb.chunk.js",
+    "static/js/353.ddcbe497.chunk.js": "/speed-tracker/static/js/353.ddcbe497.chunk.js",
     "static/media/NotoSerifDisplay-Italic-VariableFont_wdth,wght.ttf": "/speed-tracker/static/media/NotoSerifDisplay-Italic-VariableFont_wdth,wght.ee9b28946e1da7661323.ttf",
     "static/media/NotoSerifDisplay-VariableFont_wdth,wght.ttf": "/speed-tracker/static/media/NotoSerifDisplay-VariableFont_wdth,wght.432c2f12c69bdf022314.ttf",
     "static/media/Pacifico-Regular.ttf": "/speed-tracker/static/media/Pacifico-Regular.c0d735fc04154e03a691.ttf",
@@ -14,13 +14,13 @@
     "static/media/SplineSansMono-VariableFont_wght.ttf": "/speed-tracker/static/media/SplineSansMono-VariableFont_wght.5a95f1f63493e0a0fc5b.ttf",
     "index.html": "/speed-tracker/index.html",
     "main.03492834.css.map": "/speed-tracker/static/css/main.03492834.css.map",
-    "main.2259fd25.js.map": "/speed-tracker/static/js/main.2259fd25.js.map",
-    "7.7e414f5c.chunk.js.map": "/speed-tracker/static/js/7.7e414f5c.chunk.js.map",
+    "main.f883db61.js.map": "/speed-tracker/static/js/main.f883db61.js.map",
+    "7.558056fe.chunk.js.map": "/speed-tracker/static/js/7.558056fe.chunk.js.map",
     "787.eb852f1a.chunk.js.map": "/speed-tracker/static/js/787.eb852f1a.chunk.js.map",
-    "2.5789b0eb.chunk.js.map": "/speed-tracker/static/js/2.5789b0eb.chunk.js.map"
+    "353.ddcbe497.chunk.js.map": "/speed-tracker/static/js/353.ddcbe497.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03492834.css",
-    "static/js/main.2259fd25.js"
+    "static/js/main.f883db61.js"
   ]
 }
