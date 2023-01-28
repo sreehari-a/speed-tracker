@@ -25,11 +25,14 @@ import { useInjectSaga } from "../utils/injectSaga";
 import { clearRowData, getPerformance } from "./actions";
 import { selectHeaders, selectRowData } from "./selectors";
 import { selectLoading } from "../components/loader/selectors";
+import ErrorHandler from "../ErrorHandler";
+import { selectError } from "../ErrorHandler/selectors";
 
 type Props = {
   classes: any;
   headers: any;
   rowData: any;
+  error: string;
   loading: boolean;
   fetchPerfromance: Function;
   resetTable: Function;
@@ -38,9 +41,8 @@ type Props = {
 const key = "app";
 export function App(props: Props) {
   useInjectReducer({ key, reducer });
-  useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
-  const { fetchPerfromance, classes, headers, rowData, loading, resetTable, toggleTheme } = props;
+  const { fetchPerfromance, classes, headers, rowData, loading, resetTable, toggleTheme, error } = props;
   return (
     <div className={classes.appRoot}>
       {
@@ -55,6 +57,8 @@ export function App(props: Props) {
           resetTable={resetTable}
         />
       </div>
+
+      <ErrorHandler />
     </div>
   );
 }
@@ -62,6 +66,7 @@ const mapStateToProps = createStructuredSelector({
   headers: selectHeaders(),
   rowData: selectRowData(),
   loading: selectLoading(),
+  error: selectError()
 });
 
 function mapDispatchToProps(dispatch: any) {

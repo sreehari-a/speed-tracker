@@ -1,4 +1,4 @@
-import { Button } from "antd";
+import { Button, Tooltip } from "antd";
 import { CSVLink } from "react-csv";
 import stylize from "../../utils/stylize";
 import styles from "./styles";
@@ -18,14 +18,22 @@ function Table(props: Props) {
       <table>
         <tr>
           {headers?.map(({ label }: any) => {
-            return <th>{label}</th>;
+            return <th>
+              <Tooltip placement="topLeft" title={label}>
+              <span>{label}</span>
+              </Tooltip>
+            </th>;
           })}
         </tr>
         {rowData?.map((data: any) => {
           return (
             <tr>
               {headers?.map(({ key }: any) => {
-                return <td>{data[key]}</td>;
+                return <td>
+                  <Tooltip placement="topLeft" title={data[key]}>
+                  <span>{data[key]}</span>
+                  </Tooltip>
+                  </td>;
               })}
             </tr>
           );
